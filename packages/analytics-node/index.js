@@ -27,7 +27,15 @@ class Kodo {
                 headers: { 'Authorization': `Bearer ${this.apiKey}` }
             });
         } catch (error) {
-            console.error(`Error in ${endpoint} request:`, error);
+            // Log only safe fields — Axios errors can include request config/headers
+            // (Authorization bearer token) which must not be written to application logs.
+            const safeError = {
+                message: error && error.message,
+                code: error && error.code,
+                status: error && error.response && error.response.status,
+                statusText: error && error.response && error.response.statusText,
+            };
+            console.error(`Error in ${endpoint} request:`, safeError);
         }
     }
 
