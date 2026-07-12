@@ -7,7 +7,8 @@
 	],
 	"scripts": {
 		"publish:analytics-browser": "scripts/publish.sh analytics-browser",
-		"publish:analytics-node": "scripts/publish.sh analytics-node"
+		"publish:analytics-node": "scripts/publish.sh analytics-node",
+		"publish:analytics-react": "scripts/publish.sh analytics-react"
 	},
 	"repository": {
 		"type": "git",
