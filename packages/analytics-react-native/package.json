@@ -1,6 +1,6 @@
 {
 	"name": "@kodo-x/analytics-react-native",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Kodo's React Native SDK - send your mobile app analytics data to the Kodo platform",
 	"main": "index.js",
 	"types": "index.d.ts",
