@@ -1,0 +1,46 @@
+{
+	"name": "@kodo-x/analytics-react",
+	"version": "0.1.0",
+	"description": "Kodo's React SDK - send your frontend analytics data to the Kodo platform",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src --out-dir dist --extensions \".js,.jsx\" && cp src/index.d.ts dist/index.d.ts",
+		"prepare": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kodo-x/kodo-sdks.git",
+		"directory": "packages/analytics-react"
+	},
+	"keywords": [
+		"kodo",
+		"sdk",
+		"browser",
+		"analytics",
+		"js",
+		"react"
+	],
+	"author": "Kodo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kodo-x/kodo-sdks/issues"
+	},
+	"homepage": "https://github.com/kodo-x/kodo-sdks/tree/main/packages/analytics-react#readme",
+	"peerDependencies": {
+		"@kodo-x/analytics-browser": "^0.1.0",
+		"react": "^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0"
+	},
+	"devDependencies": {
+		"@babel/cli": "^7.24.7",
+		"@babel/core": "^7.24.7",
+		"@babel/preset-env": "^7.24.7",
+		"@babel/preset-react": "^7.24.7",
+		"@kodo-x/analytics-browser": "^0.1.0",
+		"react": "^18.3.1"
+	}
+}
