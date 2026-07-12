@@ -5,6 +5,9 @@
 	"workspaces": [
 		"packages/*"
 	],
+	"scripts": {
+		"publish:analytics-browser": "scripts/publish.sh analytics-browser"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/kodo-x/kodo-sdks.git"
