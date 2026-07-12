@@ -6,7 +6,8 @@
 		"packages/*"
 	],
 	"scripts": {
-		"publish:analytics-browser": "scripts/publish.sh analytics-browser"
+		"publish:analytics-browser": "scripts/publish.sh analytics-browser",
+		"publish:analytics-node": "scripts/publish.sh analytics-node"
 	},
 	"repository": {
 		"type": "git",

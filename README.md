@@ -7,6 +7,7 @@ Public customer-facing SDKs for the [Kodo](https://kodo.co) platform.
 | Package | Description |
 | --- | --- |
 | [`@kodo-x/analytics-browser`](packages/analytics-browser) | Browser JavaScript SDK for analytics event tracking and profile identification |
+| [`@kodo-x/analytics-node`](packages/analytics-node) | Node.js SDK for backend analytics event tracking and profile identification |
 
 ## Development
 
@@ -32,8 +33,10 @@ npm login
 
 ```bash
 npm run publish:analytics-browser
+npm run publish:analytics-node
 # or
 ./scripts/publish.sh analytics-browser
+./scripts/publish.sh analytics-node
 ```
 
 Scoped packages are published with `--access public`.
