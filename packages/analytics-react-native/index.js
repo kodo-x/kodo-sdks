@@ -224,7 +224,9 @@ class Kodo {
 		await Kodo.track({
 			event: "app_open",
 			properties: {
-				deepLink: deepLink,
+				// Strip query/fragment so auth tokens and magic-link secrets
+				// in deep links are never exported to analytics storage.
+				deepLink: Kodo.sanitizeDeepLinkUrl(deepLink),
 				...Kodo.getDeviceProperties()
 			},
 			addToQueue: false
@@ -576,6 +578,34 @@ class Kodo {
 	static isStringNullOrBlank(value) {
 		if (typeof value !== "string") return true
 		return !value || value == null || value == undefined || value == "" || value == "null" || value == "undefined"
+	}
+
+	/**
+	 * Remove query string and fragment from a deep-link URL so sensitive
+	 * tokens (password reset, OAuth codes, magic links) are not forwarded
+	 * into analytics properties. Preserves scheme, host, and path for attribution.
+	 * @param {string|null} url
+	 * @returns {string|null}
+	 */
+	static sanitizeDeepLinkUrl(url) {
+		if (Kodo.isStringNullOrBlank(url)) return null
+
+		try {
+			// Prefer URL parsing when the scheme is supported (https, custom schemes
+			// with a host). Fall back to index-based stripping for opaque deep links.
+			const parsed = new URL(url)
+			parsed.search = ""
+			parsed.hash = ""
+			return parsed.toString()
+		} catch (_) {
+			const queryIndex = url.indexOf("?")
+			const hashIndex = url.indexOf("#")
+			let end = url.length
+			if (queryIndex !== -1) end = Math.min(end, queryIndex)
+			if (hashIndex !== -1) end = Math.min(end, hashIndex)
+			const sanitized = url.substring(0, end)
+			return sanitized.length > 0 ? sanitized : null
+		}
 	}
 
 	static removeNullProperties(object) {
