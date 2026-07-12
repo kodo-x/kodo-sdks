@@ -1,0 +1,17 @@
+{
+	"name": "kodo-sdks",
+	"private": true,
+	"description": "Public customer-facing Kodo SDKs",
+	"workspaces": [
+		"packages/*"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kodo-x/kodo-sdks.git"
+	},
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kodo-x/kodo-sdks/issues"
+	},
+	"homepage": "https://github.com/kodo-x/kodo-sdks#readme"
+}

@@ -1,0 +1,31 @@
+{
+	"name": "@kodo-x/analytics-browser",
+	"version": "0.1.0",
+	"description": "Kodo's Browser JavaScript SDK - send your frontend analytics data to the Kodo platform",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kodo-x/kodo-sdks.git",
+		"directory": "packages/analytics-browser"
+	},
+	"keywords": [
+		"kodo",
+		"sdk",
+		"browser",
+		"analytics",
+		"js"
+	],
+	"author": "Kodo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kodo-x/kodo-sdks/issues"
+	},
+	"homepage": "https://github.com/kodo-x/kodo-sdks/tree/main/packages/analytics-browser#readme",
+	"dependencies": {
+		"cross-fetch": "^4.0.0"
+	}
+}
