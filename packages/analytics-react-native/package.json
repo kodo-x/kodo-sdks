@@ -1,0 +1,49 @@
+{
+	"name": "@kodo-x/analytics-react-native",
+	"version": "0.1.0",
+	"description": "Kodo's React Native SDK - send your mobile app analytics data to the Kodo platform",
+	"main": "index.js",
+	"types": "index.d.ts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/kodo-x/kodo-sdks.git",
+		"directory": "packages/analytics-react-native"
+	},
+	"keywords": [
+		"kodo",
+		"sdk",
+		"react-native",
+		"analytics",
+		"mobile",
+		"ios",
+		"android",
+		"tracking"
+	],
+	"author": "Kodo",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/kodo-x/kodo-sdks/issues"
+	},
+	"homepage": "https://github.com/kodo-x/kodo-sdks/tree/main/packages/analytics-react-native#readme",
+	"peerDependencies": {
+		"react": "*",
+		"react-native": "*",
+		"@react-native-async-storage/async-storage": ">=1.19.0",
+		"@react-native-community/netinfo": ">=9.0.0",
+		"react-native-device-info": ">=10.0.0"
+	},
+	"peerDependenciesMeta": {
+		"@react-native-async-storage/async-storage": {
+			"optional": false
+		},
+		"@react-native-community/netinfo": {
+			"optional": false
+		},
+		"react-native-device-info": {
+			"optional": false
+		}
+	}
+}
