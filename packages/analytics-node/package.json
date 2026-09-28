@@ -1,6 +1,6 @@
 {
 	"name": "@kodo-x/analytics-node",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "Kodo's Node.js SDK - send your backend analytics data to the Kodo platform",
 	"main": "index.js",
 	"types": "index.d.ts",
@@ -22,7 +22,7 @@
 		"nodejs"
 	],
 	"author": "Kodo",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/kodo-x/kodo-sdks/issues"
 	},

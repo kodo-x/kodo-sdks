@@ -46,3 +46,7 @@ npm run publish:analytics-react-native
 ```
 
 Scoped packages are published with `--access public`.
+
+## License
+
+All SDKs in this repository are licensed under the [MIT License](LICENSE).

@@ -238,3 +238,7 @@ kodo.getAnonymousId()
 You can retrieve the anonymous id by calling the `getAnonymousId` method. This is the id that will be used if no `userId` is provided in the `identify` or `track` methods.
 
 The underlying `Kodo` class from `@kodo-x/analytics-browser` is also re-exported for direct usage when needed.
+
+## License
+
+Licensed under the [MIT License](LICENSE).

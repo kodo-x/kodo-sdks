@@ -397,4 +397,4 @@ For issues, questions, or feature requests:
 
 ## License
 
-ISC License - see LICENSE file for details
+Licensed under the [MIT License](LICENSE).
