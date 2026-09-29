@@ -117,3 +117,7 @@ This method converts an ISO timestamp to the number of milliseconds since the Un
 If you need to provide a timestamp to the `track` method, you can use this method to convert an ISO timestamp to the required format.
 The `isoTimestampToEpoch` method takes a single argument:
 - `isoTimestamp` - A string representing an ISO timestamp
+
+## License
+
+Licensed under the [MIT License](LICENSE).

@@ -1,6 +1,6 @@
 {
 	"name": "@kodo-x/analytics-browser",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Kodo's Browser JavaScript SDK - send your frontend analytics data to the Kodo platform",
 	"main": "index.js",
 	"types": "index.d.ts",
@@ -20,7 +20,7 @@
 		"js"
 	],
 	"author": "Kodo",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/kodo-x/kodo-sdks/issues"
 	},

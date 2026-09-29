@@ -205,3 +205,7 @@ If you do not want to use the NPM package manger, simply drop the following into
 	</script>
 </head>
 ```
+
+## License
+
+Licensed under the [MIT License](LICENSE).
